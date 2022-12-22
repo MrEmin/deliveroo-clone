@@ -12,7 +12,6 @@ const Categories = () => {
       horizontal
       showsHorizontalScrollIndicator={false}
     >
-      {/* CategoryCard */}
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
         title="Testing 1"

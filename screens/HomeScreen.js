@@ -11,6 +11,7 @@ import {
 import { ScrollView, TextInput } from "react-native-gesture-handler";
 
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -60,6 +61,28 @@ const HomeScreen = () => {
         <Categories />
 
         {/* Featured Rows */}
+        <FeaturedRow
+          id="123"
+          title="Featured"
+          description="Paid placements from our partners"
+          featuredCategory="featured"
+        />
+
+        {/* Testy Discounts */}
+        <FeaturedRow
+          id="1234"
+          title="Testy Discounts"
+          description="Everyone's been enjoying these juicy discounts!"
+          featuredCategory="discounts"
+        />
+
+        {/* Offers near you */}
+        <FeaturedRow
+          id="12345"
+          title="Offers near you!"
+          description="Why not support your local restaurant tonight"
+          featuredCategory="offers"
+        />
       </ScrollView>
     </SafeAreaView>
   );
